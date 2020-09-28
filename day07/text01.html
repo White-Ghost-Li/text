@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>L15</title>
+</head>
+<body>
+    <div id="app">
+        <button data-aid="123" @click="getdata($event)">多对多</button>
+    </div>
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <script type="text/javascript" src="../js/babel.min.js"></script>
+    <script type="text/javascript" src="../js/vue-router.js"></script>
+    <script type="text/javascript" src="../js/axios.min.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                
+            },
+            methods:{
+                getdata(e){
+                    console.log(e);
+                    e.srcElement.style.background="red";
+                    console.log(e.srcElement.dataset.aid)
+                }
+            },
+            computed:{
+                
+            },
+        })
+    </script>
+</body>
+</html>
