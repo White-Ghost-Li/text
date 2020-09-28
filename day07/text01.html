@@ -6,6 +6,7 @@
 </head>
 <body>
     <div id="app">
+        <p>{{username}}</p>
         <button data-aid="123" @click="getdata($event)">多对多</button>
     </div>
     <script type="text/javascript" src="../js/vue.js"></script>
@@ -16,7 +17,7 @@
         new Vue({
             el:"#app",
             data:{
-                
+                username: "White-Ghost-Li"
             },
             methods:{
                 getdata(e){
